@@ -20,6 +20,4 @@ jobs:
 
       - name: Spell Check
         run: |
-        # make file runnable, might not be necessary
-        chmod +x ./spell-check/spell-check.sh
         bash ./spell-check/spell-check.sh
