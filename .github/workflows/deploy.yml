@@ -11,13 +11,12 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-          
+
+      - name: Spell Check
+        run: sh ./spell-check/spell-check.sh
+        
       - name: Install Node Packages
         run: npm ci
         
       - name: Build Local
         run: npm run build
-
-      - name: Spell Check
-        run: |
-        bash ./spell-check/spell-check.sh
