@@ -21,5 +21,5 @@ jobs:
       - name: Spell Check
         run: |
         # make file runnable, might not be necessary
-        chmod +x "${GITHUB_WORKSPACE}/spell-check/spell-check.sh"
-        "${GITHUB_WORKSPACE}/spell-check/spell-check.sh"
+        chmod +x ./spell-check/spell-check.sh
+        bash ./spell-check/spell-check.sh
