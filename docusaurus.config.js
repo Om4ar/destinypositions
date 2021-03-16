@@ -127,7 +127,7 @@ module.exports = {
   ],
   scripts: [
     {
-      src: 'https://kit.fontawesome.com/1932a73877.js',
+      src: 'https://kit.fontawesome.com/9247883958.js',
       crossorigin: 'anonymous',
     },
   ],

@@ -17,3 +17,9 @@ jobs:
         
       - name: Build Local
         run: npm run build
+
+      - name: Spell Check
+        run: |
+        # make file runnable, might not be necessary
+        chmod +x "${GITHUB_WORKSPACE}/spell-check/spell-check.sh"
+        "${GITHUB_WORKSPACE}/spell-check/spell-check.sh"
